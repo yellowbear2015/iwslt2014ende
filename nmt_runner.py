@@ -62,7 +62,7 @@ class NmtSystemRunner(object):
 # public:
 
     def run(self):
-        with tf.device('/gpu:4'):
+        with tf.device('/gpu:6'):
             if 'trainer' == self._action_type:
                 self._train()
             elif 'force_decoder' == self._action_type:
